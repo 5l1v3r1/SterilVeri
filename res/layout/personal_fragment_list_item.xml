@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+	android:background="@drawable/list_selector2">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/listdivider"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="3dp"
+        android:layout_toLeftOf="@+id/tvSatisMiktari"
+        android:contentDescription="image" />
+
+    <TextView
+        android:id="@+id/tvSatilanKisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/icon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/icon"
+        android:gravity="center"
+        android:text="Empty"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:id="@+id/tvSatisMiktari"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/icon"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/icon"
+        android:gravity="center"
+        android:text="Empty"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="#3355ef" >
+
+    <TextView
+        android:id="@+id/tvSatisMiktari"
+        android:layout_width="75dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:text="Amount"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:id="@+id/tvTarih"
+        android:layout_width="80dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:text="Date"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:id="@+id/tvSatilanKisi"
+        android:layout_width="100dp"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_toLeftOf="@+id/tvSatisMiktari"
+        android:layout_toRightOf="@+id/tvTarih"
+        android:gravity="center"
+        android:text="Person"
+        android:textColor="#ffffffff" />
+
+</RelativeLayout>

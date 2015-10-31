@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_margin="5dp"
+    android:background="@color/add_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llPersonSpinnerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/textspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="65"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:text="Masraf Adı:" />
+
+	    <Spinner
+	        android:id="@+id/spinner1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="35" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llNewPersonAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_margin="5dp">
+
+        <CheckBox
+            android:id="@+id/cbNewPersonAdd"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+            android:text="Yeni Ekle" />
+
+     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPersonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:focusable="true"
+    	android:focusableInTouchMode="true"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="65"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:text="Masraf Adı:" />
+
+        <EditText
+            android:id="@+id/etPerson"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="35"
+            android:ems="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:focusable="true"
+    	android:focusableInTouchMode="true"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="65"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:text="Miktar (TL):" />
+
+        <EditText
+            android:id="@+id/etA"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="35"
+            android:ems="10" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/cbTarihEkle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarih Ekle (İsteğe Bağlı)" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTarihEkle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Tamam " />
+
+
+</LinearLayout>

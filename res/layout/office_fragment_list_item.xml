@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+	android:background="@drawable/list_selector2">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/listdivider"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="3dp"
+        android:layout_toLeftOf="@+id/tvSatisMiktari"
+        android:contentDescription="image" />
+
+    <TextView
+        android:id="@+id/tvSatilanKisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/icon"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/icon"
+        android:layout_toRightOf="@+id/icon2"
+        android:gravity="center"
+        android:text="Hastahane"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:id="@+id/tvSatisMiktari"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/icon"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/icon"
+        android:gravity="center"
+        android:text="Satış Miktarı"
+        android:textColor="#ffffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvTarih"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvSatilanKisi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/icon"
+        android:gravity="center_vertical"
+        android:text="Tarih"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffffff" />
+
+    <ImageView
+        android:id="@+id/icon2"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="3dp"
+        android:layout_toRightOf="@+id/tvTarih"
+        android:background="@drawable/listdivider"
+        android:contentDescription="image" />
+
+</RelativeLayout>

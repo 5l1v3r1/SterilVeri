@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#99cc00" >
+    
+    <LinearLayout
+        android:id="@+id/llButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:weightSum="150" >
+
+        <Button
+            android:id="@+id/bVeriEkle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="50"
+            android:text="Veri Ekle" />
+
+        <Button
+            android:id="@+id/bDetails"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="50"
+            android:text="Detaylar" />
+        <Button
+            android:id="@+id/bRemoveAllData"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="50"
+            android:textSize="13sp"
+            android:text="Tüm Verileri Sil" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lllistview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llButtons"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+    <RelativeLayout
+            android:id="@+id/rltoplam"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" >
+
+            <TextView
+                android:id="@+id/tvToplam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:textColor="#fff"
+                android:text="Toplam: 0 TL" />
+
+        </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvPersonal"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/rltoplam"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lvContent"
+        android:layout_margin="1dp"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector2" >
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/lvContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector2" >
+
+    </ListView>
+
+    </RelativeLayout>
+    
+
+</RelativeLayout>
